@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body {
+        background-color: #333;
+        color: #fff;
+        margin-top: 100px;
+        font-family: monospace, sans-serif;
+        text-align: center;
+    }
+
+    #content {
+        display: grid;
+        /*grid-template-columns: 33.3% 33.3% 33.3%;*/
+        /*grid-template-columns: 2fr 1fr 1fr;*/
+        grid-template-columns: repeat(3,2fr);
+        /*grid-template-rows: 200px 300px 400px 500px;*/
+        /*grid-template-rows: repeat(3,minmax(200px,auto));*/
+        grid-template-rows: repeat(3,200px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    #content div {
+        background: #27ae60;
+        padding: 30px;
+        border: 1px solid #fff;
+    }
+
+    #content div:nth-child(even) {
+        background: #e74c3c;
+        padding: 30px;
+    }
+</style>
+
+<body>
+    <div id="content">
+        <div>Lorem ipsum dolor.</div>
+        <div>Ea, maxime, odio!</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vero, porro animi cupiditate repellendus sunt voluptatibus qui accusantium aliquam saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea veniam temporibus veritatis impedit quibusdam vel odit perspiciatis minus qui eum.</div>
+        <div>Tempora, explicabo autem.</div>
+        <div>Assumenda consequatur, quis!</div>
+        <div>Nisi, velit obcaecati?</div>
+        <div>Itaque, voluptate, nobis.</div>
+        <div>Deserunt, tempora, ipsam.</div>
+        <div>Aspernatur, eos in?</div>
+    </div>
+</body>
+
+</html>
